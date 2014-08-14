@@ -1,0 +1,26 @@
+{
+  "name": "ko-genius",
+  "version": "0.0.1",
+  "description": "A library for getting resources and parsing them into an object graph, all using the Knockout API",
+  "main": "ko-genius.js",
+  "scripts": {
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cameronprattedwards/ko-genius.git"
+  },
+  "keywords": [
+    "knockout",
+    "data",
+    "resource",
+    "object",
+    "graph"
+  ],
+  "author": "Cameron Edwards <cameronprattedwards@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronprattedwards/ko-genius/issues"
+  },
+  "homepage": "https://github.com/cameronprattedwards/ko-genius"
+}
