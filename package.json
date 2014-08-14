@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/cameronprattedwards/ko-genius/issues"
   },
-  "homepage": "https://github.com/cameronprattedwards/ko-genius"
+  "homepage": "https://github.com/cameronprattedwards/ko-genius",
+  "devDependencies": {
+    "karma": "~0.12.21",
+    "karma-chrome-launcher": "~0.1.4",
+    "karma-jasmine": "~0.1.5"
+  }
 }
