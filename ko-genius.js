@@ -1142,7 +1142,8 @@ var genius = {};
         function param(data) {
             var pairs = [];
             for (var x in data) {
-                pairs.push(x + "=" + (data[x].toQuery ? data[x].toQuery() : data[x]));
+                if (data[x])
+                    pairs.push(x + "=" + (data[x].toQuery ? data[x].toQuery() : data[x]));
             }
             return pairs.length ? "?" + pairs.join("&") : "";
         };
@@ -1160,7 +1161,7 @@ var genius = {};
                     output = output.replace(match[0], replacement);
                     alreadyMatched.push(match[1]);
                 }
-                if (/\/$/.test(output))
+                while (/\/$/.test(output))
                     output = output.substr(0, output.length - 1);
                 if (addQuery !== false)
                     output += param(genius.utils.except(data instanceof genius.Resource ? data.properties() : data, alreadyMatched));

@@ -15,7 +15,7 @@ module.exports = function (config) {
         files: [
             'knockout-2.2.0.js',
             'ko-genius.js',
-            '../genius-base-spec.js',
+            'genius-base-spec.js',
             'ko-genius-spec.js'
         ],
 
